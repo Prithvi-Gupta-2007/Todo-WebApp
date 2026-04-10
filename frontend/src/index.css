@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* keep everything below SAME */
+
+:root {
+  /* Ocean Theme Colors */
+  --background: 213 62% 9%;       /* #091524 - Deepest ocean */
+  --foreground: 201 100% 95%;     /* #e6f7ff - Bright text */
+  --border: 213 40% 20%;
+  --input: 213 40% 20%;
+  --ring: 195 100% 60%;
+  
+  --card: 212 50% 12%;            /* #0f243d */
+  --card-foreground: 201 100% 95%;
+  --card-border: 213 40% 25%;
+  
+  --primary: 195 100% 60%;        /* #33ccff - Bright cyan accent */
+  --primary-foreground: 213 62% 9%;
+  
+  --secondary: 210 40% 20%;       /* Subdued blue */
+  --secondary-foreground: 201 100% 95%;
+  
+  --muted: 213 40% 18%;
+  --muted-foreground: 201 40% 73%; /* #9fc3d6 */
+  
+  --accent: 195 100% 60%;
+  --accent-foreground: 213 62% 9%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  
+  --radius: 1rem;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased bg-background text-foreground overflow-x-hidden;
+    background-image: radial-gradient(circle at top right, #1b4d6b 0%, transparent 40%),
+                      radial-gradient(circle at bottom left, #123456 0%, transparent 40%);
+    background-color: #0d2238;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+}
+
+/* Force standard shadcn Toaster to top center to meet requirements */
+.toaster-group, [data-sonner-toaster] {
+  top: 24px !important;
+  bottom: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+}
+
+/* Custom Checkbox Animation classes */
+.checkbox-fill {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+.checkbox-checked .checkbox-fill {
+  transform: scale(1);
+  opacity: 1;
+}
+.checkbox-unchecked .checkbox-fill {
+  transform: scale(0);
+  opacity: 0;
+}
+
+/* Scrollbar styling for sleek premium look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
