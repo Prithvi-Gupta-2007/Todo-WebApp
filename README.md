@@ -27,10 +27,10 @@ A fullstack task manager built using MERN stack.
 ### ➕ Create Task
 ![Create](./screenshots/create.png)
 
-### 📋 Task List
+### 📋 Completed Tasks
 ![Tasks](./screenshots/tasks.png)
 
-### ✅ Completed Tasks
+### ✅ Updated Home Page
 ![Completed](./screenshots/completed.png)
 
 ---
