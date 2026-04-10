@@ -22,16 +22,16 @@ A fullstack task manager built using MERN stack.
 ## 📸 Preview
 
 ### 🏠 Home Page
-![Home](<img width="2549" height="1391" alt="image" src="https://github.com/user-attachments/assets/dcf1e3ed-1ea3-4a40-947d-9afa61efb644" />)
+![Home](./ss/home.png)
 
 ### ➕ Create Task
-![Create](./screenshots/create.png)
+![Create](./ss/create.png)
 
 ### 📋 Completed Tasks
-![Tasks](./screenshots/tasks.png)
+![Tasks](./ss/complete.png)
 
 ### ✅ Updated Home Page
-![Completed](./screenshots/completed.png)
+![Completed](./ss/updated.png)
 
 ---
 
