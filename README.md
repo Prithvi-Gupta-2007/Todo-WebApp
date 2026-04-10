@@ -38,6 +38,7 @@ A fullstack task manager built using MERN stack.
 ## ▶️ Run locally
 
 ### Backend
+```bash
 cd backend
 npm install
 npm run dev
